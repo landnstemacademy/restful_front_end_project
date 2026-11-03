@@ -1,0 +1,46 @@
+.post_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+.post_card {
+  background-color: #f0f0f0;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  height: 3in;
+  overflow: hidden;
+  padding: 1rem;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.post_card:hover {
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.18);
+  transform: translateY(-2px);
+}
+
+.post_card img {
+  display: block;
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 0.75rem;
+}
+
+.post_card h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1rem;
+}
+
+.post_card p {
+  margin: 0;
+  color: #555;
+  font-size: 0.9rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 8;
+  line-clamp: 8;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
