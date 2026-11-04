@@ -1,5 +1,10 @@
 # Clubs at L&N STEM: Build a Front End for a REST API
 
+**
+To Run, type ```js
+npx http-server```
+**
+
 This is a small web app for browsing and managing school clubs and the students in them. It has **no back end of its own**. All data comes from a free mock API service, and the app talks to it with `fetch()`.
 
 You can build the same thing with your own idea (movies, sports teams, recipes, whatever you like). This guide shows how this project works so you can copy the pattern.
