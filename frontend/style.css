@@ -1,3 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600&display=swap");
+
+body,
+body * {
+  font-family: "Oswald", "Railroad Gothic", "Arial Narrow", sans-serif;
+}
+
 .lns_nav {
   background-color: #00693e;
   padding: 0 1.5rem;
