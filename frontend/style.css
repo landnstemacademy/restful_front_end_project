@@ -75,6 +75,38 @@
   border-color: #000;
 }
 
+.back_link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 1rem;
+  color: #222;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.back_link span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  background: #fff;
+  font-size: 1.1rem;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.back_link:hover span {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.18);
+  transform: translateX(-3px);
+}
+
+.back_link:hover {
+  text-decoration: underline;
+}
+
 .club_form {
   display: flex;
   flex-direction: column;
