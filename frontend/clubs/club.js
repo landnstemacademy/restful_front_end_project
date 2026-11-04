@@ -4,6 +4,11 @@ const API_URL = `${API_ORIGIN}/api/v1`;
 const clubId = new URLSearchParams(window.location.search).get("id");
 
 async function loadClub() {
+  if (!clubId) {
+    window.location.href = "view_clubs.html";
+    return;
+  }
+
   const [clubResponse, usersResponse] = await Promise.all([
     fetch(`${API_URL}/clubs/${clubId}`),
     fetch(`${API_URL}/users`),
@@ -12,6 +17,7 @@ async function loadClub() {
   const users = await usersResponse.json();
 
   document.getElementById("club_name").textContent = club.name;
+  document.getElementById("edit_club").href = `edit_club.html?id=${clubId}`;
   document.getElementById("club_logo").src = club.thumbnail;
   document.getElementById("club_logo").alt = club.name;
 
