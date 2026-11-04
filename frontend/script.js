@@ -10,11 +10,11 @@ async function fetchClubs() {
   for(let club of all_clubs){
       document.getElementById('clubs').innerHTML +=
     //   Card populated by API data
-      `<div class='club_card'>
+      `<a class='club_card' href='edit_club.html?id=${club['id']}'>
         <img src='${club['thumbnail']}' alt='${club['name']}'>
         <h3>${club['name']}</h3>
         <p>${club['description']}</p>
-      </div>`
+      </a>`
   }
 }
 

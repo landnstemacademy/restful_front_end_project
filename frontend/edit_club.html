@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Edit Club</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="edit_club.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <a href="index.html">&larr; Back to clubs</a>
+      <h1>Edit club</h1>
+      <form id="club_form" class="club_form">
+        <label for="name">Club name</label>
+        <input id="name" name="name" type="text" required>
+
+        <label for="description">Description</label>
+        <textarea id="description" name="description" rows="5" required></textarea>
+
+        <label for="thumbnail">Image URL</label>
+        <input id="thumbnail" name="thumbnail" type="url">
+
+        <label for="user_select">Members</label>
+        <ul id="member_list" class="member_list"></ul>
+        <div class="add_user_row">
+          <select id="user_select"></select>
+          <button type="button" id="add_user_button">Add user</button>
+        </div>
+
+        <button type="submit">Save</button>
+        <button type="button" id="delete_button" class="delete_button">Delete</button>
+      </form>
+    </main>
+  </body>
+</html>

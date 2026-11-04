@@ -21,18 +21,10 @@ form.addEventListener("submit", async (event) => {
   button.disabled = true;
   message.textContent = "Saving...";
 
-  try {
-    const response = await fetch(`${API_URL}/clubs`, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(newClub),
-    });
-    if (!response.ok) {
-      throw new Error(`Request failed with status ${response.status}`);
-    }
-    window.location.href = "index.html";
-  } catch (error) {
-    message.textContent = `Could not create club: ${error.message}`;
-    button.disabled = false;
-  }
+  const response = await fetch(`${API_URL}/clubs`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(newClub),
+  });
+  window.location.href = "index.html";
 });

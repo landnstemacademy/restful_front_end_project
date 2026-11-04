@@ -5,6 +5,9 @@
 }
 
 .club_card {
+  display: block;
+  color: inherit;
+  text-decoration: none;
   background-color: #f0f0f0;
   border-radius: 12px;
   border: 1px solid #ddd;
@@ -96,6 +99,47 @@
   background: #222;
   color: #fff;
   cursor: pointer;
+}
+
+.add_user_row {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.add_user_row select {
+  flex: 1;
+  padding: 0.5rem;
+  font: inherit;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.add_user_row button {
+  margin-top: 0;
+}
+
+.member_list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.member_list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.25rem 0;
+}
+
+.club_form .remove_user_button {
+  margin-top: 0;
+  padding: 0.25rem 0.6rem;
+  background: #c62828;
+}
+
+.club_form .delete_button {
+  margin-top: 0;
+  background: #c62828;
 }
 
 .club_form button:disabled {
