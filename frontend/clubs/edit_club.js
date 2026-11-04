@@ -16,7 +16,7 @@ function renderUsers() {
     .map((id) => {
       const user = all_users.find((u) => u.id === String(id));
       return `<li>
-        <span>${user ? user.name : `User ${id}`}</span>
+        <span>${user.name}</span>
         <button type="button" class="remove_user_button" data-id="${id}">Remove</button>
       </li>`;
     })
