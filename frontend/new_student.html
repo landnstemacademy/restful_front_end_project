@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Add Student</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="new_student.js" defer></script>
+  </head>
+  <body>
+    <nav class="lns_nav">
+      <div class="nav-wrapper">
+        <a href="index.html" class="brand-logo"><img src="https://resources.finalsite.net/images/f_auto,q_auto,t_image_size_2/v1786973953/knoxschoolsorg/xvau4g2abw9zti617eco/LNSTEMColor3x.png" alt="L&amp;N STEM logo"><span>L&amp;N STEM</span></a>
+        <ul class="right">
+          <li><a href="index.html">Home</a></li>
+          <li class="active"><a href="students.html">Students</a></li>
+        </ul>
+      </div>
+    </nav>
+    <main>
+      <a href="students.html" class="back_link"><span aria-hidden="true">&larr;</span> Back to students</a>
+      <h1>Add a student</h1>
+      <form id="student_form" class="club_form">
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" class="browser-default" required>
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" class="browser-default" required>
+
+        <label for="avatar">Avatar URL (optional)</label>
+        <input id="avatar" name="avatar" type="url" class="browser-default" placeholder="https://...">
+
+        <button type="submit">Add student</button>
+      </form>
+    </main>
+  </body>
+</html>

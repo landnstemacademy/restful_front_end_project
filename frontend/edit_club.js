@@ -36,6 +36,7 @@ async function loadClub() {
   ]);
   const club = await clubResponse.json();
   all_users = await usersResponse.json();
+  all_users.sort((a, b) => a.name.localeCompare(b.name));
   form.name.value = club.name;
   form.description.value = club.description;
   form.thumbnail.value = club.thumbnail;

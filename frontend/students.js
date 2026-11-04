@@ -4,6 +4,7 @@ const API_URL = `${API_ORIGIN}/api/v1`;
 async function fetchStudents() {
   const response = await fetch(`${API_URL}/users`);
   const users = await response.json();
+  users.sort((a, b) => a.name.localeCompare(b.name));
   document.getElementById("student_list").innerHTML = users
     .map(
       (user) => `<li class="collection-item student_row">

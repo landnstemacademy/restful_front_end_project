@@ -34,6 +34,25 @@ main {
   background-color: #c62828;
 }
 
+.page_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.add_student_button {
+  padding: 0.5rem 1.1rem;
+  border-radius: 999px;
+  background-color: #00693e;
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.add_student_button:hover {
+  background-color: #004d2d;
+}
+
 .student_row {
   display: flex;
   align-items: center;
