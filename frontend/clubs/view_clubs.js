@@ -17,6 +17,13 @@ async function fetchClubs() {
         <a class='card_edit_button' href='clubs/edit_club.html?id=${club['id']}'>Edit</a>
       </div>`
   }
+
+  // The add card always goes last
+  document.getElementById('clubs').innerHTML +=
+    `<a href='clubs/new_club.html' class='club_card add_card' aria-label='Create a new club'>
+      <span class='plus'>+</span>
+      <span class='add_label'>Add a new club</span>
+    </a>`
 }
 
 // Clicking a card opens its club page; the Edit button keeps its own link
