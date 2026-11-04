@@ -16,7 +16,10 @@ function renderUsers() {
     .map((id) => {
       const user = all_users.find((u) => u.id === String(id));
       return `<li>
-        <span>${user.name}</span>
+        <span class="member_info">
+          <img class="member_avatar" src="${user.avatar}" alt="">
+          <span>${user.name}</span>
+        </span>
         <button type="button" class="remove_user_button" data-id="${id}">Remove</button>
       </li>`;
     })

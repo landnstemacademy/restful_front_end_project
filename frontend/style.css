@@ -269,6 +269,19 @@ main {
   padding: 0.25rem 0;
 }
 
+.member_info {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.member_avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
 .club_form .remove_user_button {
   margin-top: 0;
   padding: 0.25rem 0.6rem;
