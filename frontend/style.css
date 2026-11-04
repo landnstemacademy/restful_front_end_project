@@ -1,10 +1,10 @@
-.post_container {
+.club_container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
   gap: 24px;
 }
 
-.post_card {
+.club_card {
   background-color: #f0f0f0;
   border-radius: 12px;
   border: 1px solid #ddd;
@@ -15,12 +15,12 @@
   transition: box-shadow 0.2s ease, transform 0.2s ease;
 }
 
-.post_card:hover {
+.club_card:hover {
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.18);
   transform: translateY(-2px);
 }
 
-.post_card img {
+.club_card img {
   display: block;
   width: 100%;
   height: 160px;
@@ -29,12 +29,12 @@
   margin-bottom: 0.75rem;
 }
 
-.post_card h3 {
+.club_card h3 {
   margin: 0 0 0.5rem;
   font-size: 1rem;
 }
 
-.post_card p {
+.club_card p {
   margin: 0;
   color: #555;
   font-size: 0.9rem;
