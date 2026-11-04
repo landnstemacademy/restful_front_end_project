@@ -8,7 +8,10 @@ async function fetchStudents() {
   document.getElementById("student_list").innerHTML = users
     .map(
       (user) => `<li class="collection-item student_row">
-        <span>${user.name}</span>
+        <span class="member_info">
+          <img class="member_avatar" src="${user.avatar}" alt="">
+          <span>${user.name}</span>
+        </span>
         <span class="student_actions">
           <a class="edit_button" href="student.html?id=${user.id}">Edit</a>
           <button type="button" class="delete_student_button" data-id="${user.id}">Delete</button>
