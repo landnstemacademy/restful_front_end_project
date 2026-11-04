@@ -4,8 +4,17 @@
 }
 
 .lns_nav .brand-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  height: 100%;
+  left: 0;
   font-size: 1.5rem;
   font-weight: 700;
+}
+
+.lns_nav .brand-logo img {
+  height: 44px;
 }
 
 .lns_nav ul li.active {
