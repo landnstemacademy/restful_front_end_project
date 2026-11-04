@@ -26,5 +26,5 @@ form.addEventListener("submit", async (event) => {
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(newClub),
   });
-  window.location.href = "index.html";
+  window.location.href = "../index.html";
 });

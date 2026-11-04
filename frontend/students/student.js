@@ -19,7 +19,7 @@ async function loadStudent() {
   const memberOf = clubs.filter((club) => club.users.map(String).includes(String(user.id)));
   document.getElementById("student_clubs").innerHTML = memberOf.length
     ? memberOf
-        .map((club) => `<li class="collection-item"><a href="edit_club.html?id=${club.id}">${club.name}</a></li>`)
+        .map((club) => `<li class="collection-item"><a href="../clubs/edit_club.html?id=${club.id}">${club.name}</a></li>`)
         .join("")
     : `<li class="collection-item">Not in any clubs yet</li>`;
 }
