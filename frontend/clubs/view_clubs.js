@@ -14,13 +14,13 @@ async function fetchClubs() {
         <img src='${club['thumbnail']}' alt='${club['name']}'>
         <h3>${club['name']}</h3>
         <p>${club['description']}</p>
-        <a class='card_edit_button' href='clubs/edit_club.html?id=${club['id']}'>Edit</a>
+        <a class='card_edit_button' href='edit_club.html?id=${club['id']}'>Edit</a>
       </div>`
   }
 
   // The add card always goes last
   document.getElementById('clubs').innerHTML +=
-    `<a href='clubs/new_club.html' class='club_card add_card' aria-label='Create a new club'>
+    `<a href='new_club.html' class='club_card add_card' aria-label='Create a new club'>
       <span class='plus'>+</span>
       <span class='add_label'>Add a new club</span>
     </a>`
@@ -30,7 +30,7 @@ async function fetchClubs() {
 document.getElementById('clubs').addEventListener('click', (event) => {
   const card = event.target.closest('.club_card[data-id]');
   if (!card || event.target.closest('.card_edit_button')) return;
-  window.location.href = `clubs/club.html?id=${card.dataset.id}`;
+  window.location.href = `club.html?id=${card.dataset.id}`;
 });
 
 window.addEventListener("load", fetchClubs);

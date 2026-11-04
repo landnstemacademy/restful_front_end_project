@@ -84,14 +84,14 @@ form.addEventListener("submit", async (event) => {
       users: clubUsers,
     }),
   });
-  window.location.href = "../index.html";
+  window.location.href = "view_clubs.html";
 });
 
 deleteButton.addEventListener("click", async () => {
   if (!confirm("Delete this club?")) return;
 
   await fetch(`${API_URL}/clubs/${clubId}`, { method: "DELETE" });
-  window.location.href = "../index.html";
+  window.location.href = "view_clubs.html";
 });
 
 window.addEventListener("load", loadClub);
