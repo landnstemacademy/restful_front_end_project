@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Create a New Club</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="new_club.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <a href="index.html">&larr; Back to clubs</a>
+      <h1>Create a new club</h1>
+      <form id="club_form" class="club_form">
+        <label for="name">Club name</label>
+        <input id="name" name="name" type="text" required>
+
+        <label for="description">Description</label>
+        <textarea id="description" name="description" rows="5" required></textarea>
+
+        <label for="thumbnail">Image URL (optional)</label>
+        <input id="thumbnail" name="thumbnail" type="url" placeholder="https://...">
+
+        <button type="submit">Create club</button>
+        <p id="form_message" role="status"></p>
+      </form>
+    </main>
+  </body>
+</html>
