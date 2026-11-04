@@ -10,6 +10,18 @@ body * {
   padding: 0 1.5rem;
 }
 
+.lns_nav .nav_title {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: inherit;
+  color: #fff;
+  white-space: nowrap;
+}
+
 .lns_nav .brand-logo {
   display: flex;
   align-items: center;
