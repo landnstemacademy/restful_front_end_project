@@ -40,6 +40,29 @@ main {
   justify-content: space-between;
 }
 
+.student_actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.delete_student_button {
+  padding: 0.25rem 0.9rem;
+  border: 1px solid #c62828;
+  border-radius: 999px;
+  background: transparent;
+  color: #c62828;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.delete_student_button:hover,
+.delete_student_button:focus {
+  background-color: #c62828;
+  color: #fff;
+}
+
 .edit_button {
   padding: 0.25rem 0.9rem;
   border: 1px solid #00693e;

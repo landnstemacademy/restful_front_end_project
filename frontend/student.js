@@ -24,4 +24,11 @@ async function loadStudent() {
     : `<li class="collection-item">Not in any clubs yet</li>`;
 }
 
+document.getElementById("delete_student_button").addEventListener("click", async () => {
+  if (!confirm("Delete this student?")) return;
+
+  await fetch(`${API_URL}/users/${studentId}`, { method: "DELETE" });
+  window.location.href = "students.html";
+});
+
 window.addEventListener("load", loadStudent);
